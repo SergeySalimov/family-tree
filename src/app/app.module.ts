@@ -11,24 +11,31 @@ import { TreeComponent } from './components/tree/tree.component';
 import { OptionsComponent } from './components/options/options.component';
 import { SecurityComponent } from './components/security/security.component';
 import { NoPageFoundComponent } from './components/no-page-found/no-page-found.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './modules/material/material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    TreeComponent,
-    OptionsComponent,
-    SecurityComponent,
-    NoPageFoundComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        TreeComponent,
+        OptionsComponent,
+        SecurityComponent,
+        NoPageFoundComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFireModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+        FlexLayoutModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
