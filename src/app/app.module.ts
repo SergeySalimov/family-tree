@@ -5,15 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { TreeComponent } from './components/tree/tree.component';
-import { OptionsComponent } from './components/options/options.component';
-import { SecurityComponent } from './components/security/security.component';
-import { NoPageFoundComponent } from './components/no-page-found/no-page-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './modules/material/material.module';
+import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {
+    FooterComponent,
+    HeaderComponent,
+    NoPageFoundComponent,
+    OptionsComponent,
+    SecurityComponent,
+    TreeComponent
+} from './components';
 
 @NgModule({
     declarations: [
